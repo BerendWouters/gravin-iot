@@ -16,10 +16,10 @@ services:
       - /var/log/mosquitto:/mosquitto/log
     networks:
       - default
-  node-red:
+  nodered:
     image: nodered/node-red-docker
-    hostname: node-red
-    container_name: node-red
+    hostname: nodered
+    container_name: nodered
     expose:
       - "1880"
     ports:
